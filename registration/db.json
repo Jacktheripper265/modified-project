@@ -164,231 +164,54 @@
   "blogs": [
     {
       "author": "jack",
-      "title": "trip to goa",
-      "category": "IT",
-      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
-      "id": 1,
-      "likes": "shekhar"
-    },
-    {
-      "author": "jack",
-      "title": "should we buy bitbucket ",
-      "category": "Technology",
-      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
-      "id": 2
-    },
-    {
-      "author": "jack",
-      "title": "trip to goa",
+      "title": "erwaerwe",
       "category": "Lifestyle",
-      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
+      "content": "<p>rwerwerwer</p>",
       "id": 3
     },
     {
-      "author": "jack",
-      "title": "cultivation chat group",
-      "category": "IT",
-      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
-      "id": 4
-    },
-    {
-      "author": "jack",
+      "author": "shekhar",
       "title": "movie with buddies",
-      "category": "Technology",
-      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
-      "id": 5
-    },
-    {
-      "author": "shekhar",
-      "title": "live your life to the fullest",
-      "category": "Lifestyle",
-      "content": "<p><span style=\"color: #4d4d4d; font-family: Roboto, serif, arial, helvetica; font-size: 18px; background-color: #ffffff;\"><em>&ldquo;Your time is limited, don&rsquo;t waste it living someone else&rsquo;s life. Don&rsquo;t be trapped by dogma, which is living the result of other people&rsquo;s thinking. Don&rsquo;t let the noise of other&rsquo;s opinion drown your own inner voice. And most important, have the courage to follow your heart and intuition, they somehow already know what you truly want to become. Everything else is secondary.&rdquo;</em> &ndash;<strong>&nbsp;</strong></span><strong><a style=\"text-decoration-line: none; color: #960000; outline: 0px; transition: all 0.2s ease 0s; box-sizing: border-box; box-shadow: none; border-bottom: 2px solid transparent; font-family: Roboto, serif, arial, helvetica; font-size: 18px; background-color: #ffffff;\" href=\"https://personalexcellence.co/blog/steve-jobs/\">Steve Jobs</a></strong></p>",
-      "id": 6,
-      "likes": ""
-    },
-    {
-      "author": "shekhar",
-      "title": "should we buy bitbucket ",
-      "category": "It",
-      "content": "<p>e<strong>wrewrwerwerr</strong></p>",
-      "id": 7
+      "category": "IT",
+      "content": "<p style=\"box-sizing: inherit; margin: 0px 0px 26px; padding: 0px; color: #222222; font-family: Roboto, sans-serif; font-size: 16px; background-color: #ffffff;\">Diwali is my favorite festival of the year and I celebrate it with lots of enthusiasm with my family members and friends. Diwali is called the festival of lights because we celebrate it by lighting lots of diyas and candles. It is a traditional and cultural festival celebrated by each and every Hindu person all over India and abroad. People decorate their houses with lots of candles and small clay oil lamps indicating the victory of good over evil.</p>\n<p style=\"box-sizing: inherit; margin: 0px 0px 26px; padding: 0px; color: #222222; font-family: Roboto, sans-serif; font-size: 16px; background-color: #ffffff;\">Family members spend most of the day time in preparing house (cleaning, decorating, etc) to welcome the festival with a grand evening party. Neighbors, family members, and friends get collected in the evening party and enjoy the party with lots of delicious Indian dishes, dance, music, etc all through the night. Houses look very attractive in whitewash, candle lights, and rangolis. High pitch music and fireworks make the celebration more interesting.</p>",
+      "id": 4
     }
   ],
   "likes": [
     {
-      "blogid": "2",
-      "name": "jack",
-      "id": 2
-    },
-    {
       "blogid": "3",
-      "name": "jack",
-      "id": 3
-    },
-    {
-      "blogid": "1",
-      "name": "shekhar",
-      "id": 4
-    },
-    {
-      "blogid": "6",
-      "name": "jack",
-      "id": 5
-    },
-    {
-      "blogid": "4",
-      "name": "jack",
-      "id": 6
-    },
-    {
-      "blogid": "5",
-      "name": "jack",
-      "id": 7
-    },
-    {
-      "blogid": "1",
-      "name": "jordan",
-      "id": 8
-    },
-    {
-      "blogid": "2",
-      "name": "jordan",
-      "id": 9
-    },
-    {
-      "blogid": "6",
-      "name": "jordan",
-      "id": 10
-    },
-    {
-      "blogid": "6",
-      "name": "shekhar",
-      "id": 11
-    },
-    {
-      "blogid": "3",
-      "name": "shekhar",
-      "id": 12
-    },
-    {
-      "blogid": "2",
-      "name": "shekhar",
-      "id": 13
-    },
-    {
-      "blogid": "1",
-      "name": "jack",
-      "id": 14
-    }
-  ],
-  "comments": [
-    {
-      "content": "hi there",
-      "blogid": "1",
       "name": "jack",
       "id": 1
     },
     {
-      "content": "how are you",
-      "blogid": "1",
-      "name": "shekhar",
-      "id": 2
-    },
-    {
-      "content": "its good",
-      "blogid": "2",
+      "blogid": "4",
       "name": "shekhar",
       "id": 3
     },
     {
-      "content": "fine bro",
-      "blogid": "1",
-      "name": "jordan",
-      "id": 4
-    },
-    {
-      "content": "is it",
-      "blogid": "2",
-      "name": "jordan",
+      "blogid": "3",
+      "name": "shekhar",
       "id": 5
-    },
+    }
+  ],
+  "comments": [
     {
-      "content": "this article i great",
-      "blogid": "6",
-      "name": "jordan",
-      "id": 6
-    },
-    {
-      "content": "hi there how are you",
-      "blogid": "1",
+      "content": "czxczxc",
+      "blogid": "3",
       "name": "jack",
-      "id": 7
+      "id": 1
     },
     {
-      "content": "",
-      "blogid": "2",
-      "name": "jack",
-      "id": 8
-    },
-    {
-      "content": " thank you bro",
-      "blogid": "2",
-      "name": "jack",
-      "id": 9
-    },
-    {
-      "content": "",
-      "blogid": "2",
-      "name": "jack",
-      "id": 10
-    },
-    {
-      "content": "how are you ar eyomsdklajs",
-      "blogid": "2",
-      "name": "jack",
-      "id": 11
-    },
-    {
-      "content": " yeah great article",
-      "blogid": "6",
-      "name": "jack",
-      "id": 12
-    },
-    {
-      "content": " yeah great piece of art",
-      "blogid": "6",
+      "content": "fgfcgfg",
+      "blogid": "4",
       "name": "shekhar",
-      "id": 13
+      "id": 3
     },
     {
-      "content": "great work",
+      "content": "sfsded",
       "blogid": "3",
       "name": "shekhar",
-      "id": 14
-    },
-    {
-      "content": "good",
-      "blogid": "3",
-      "name": "shekhar",
-      "id": 15
-    },
-    {
-      "content": "yarr tera ",
-      "blogid": "1",
-      "name": "jack",
-      "id": 16
-    },
-    {
-      "content": "superstar",
-      "blogid": "2",
-      "name": "jack",
-      "id": 17
-    },
-    {
-      "content": "had a lot of fun",
-      "blogid": "5",
-      "name": "jack",
-      "id": 18
+      "id": 5
     }
   ]
 }

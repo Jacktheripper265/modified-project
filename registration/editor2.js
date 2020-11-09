@@ -1,7 +1,53 @@
 
 $(document).ready(()=>{
        
+    var likes=new Array();
+    //////like array
+     $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/likes",
+       
+        success: function(data, status, xhr){
+            console.log('success'+status);
+            alert('success'+status);
+            likes=JSON.parse(data);
+            console.log(likes);
+           
+            
+        },
         
+        error:function(jqXhr, textStatus, errorMessage){
+            console.log('error'+errorMessage);
+        },
+        dataType: "text",
+        contentType : "application/json",
+        
+        
+      });  
+ 
+      /////comment array
+      var commentarray=new Array();
+      $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/comments",
+       
+        success: function(data, status, xhr){
+            console.log('success'+status);
+            alert('success'+status);
+            commentarray=JSON.parse(data);
+            console.log(commentarray);
+            
+            
+        },
+        
+        error:function(jqXhr, textStatus, errorMessage){
+            console.log('error'+errorMessage);
+        },
+        dataType: "text",
+        contentType : "application/json",
+        
+        
+      });    
 
     $('.button1').click(function(){
         console.log('reach');
@@ -10,6 +56,7 @@ $(document).ready(()=>{
         $('#myForm1').css('display','block');
         // $('#myForm').addClass('invisible');
         // $('#myForm1').addClass('visible');
+        $('#profile').css('display','none');
         
         $('footer').addClass('foot2');
     })
@@ -20,6 +67,7 @@ $(document).ready(()=>{
         $('#home').css('display','block');
         // $('#myForm').addClass('visible');
         // $('#myForm1').addClass('invisible');
+        $('#profile').css('display','none');
         
         $('footer').removeClass('foot2');
     })  
@@ -83,7 +131,7 @@ $.ajax({
         console.log(data);
         blog=data;
         
-        
+        load1();
     },
     error:(e)=>{
         alert("error");
@@ -105,11 +153,11 @@ $('.buttonz').on('click',function(){
           
 
         
-            $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
         }
         if(cat=="all")
         {
-            $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
         }
     }
 })
@@ -125,7 +173,7 @@ $('#sea').on('keyup',()=>{
             if(blog[i].title.includes(search))
             {
             
-            $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
         if(cate=="all")
@@ -133,7 +181,7 @@ $('#sea').on('keyup',()=>{
             if(blog[i].title.includes(search))
             {
             
-            $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
     }
@@ -144,15 +192,163 @@ $('#sea').on('keyup',()=>{
 
 
 $('body').on('click','.but3',function(){
-    var id=$(this).attr('id');
+    let id=$(this).attr('id');
     console.log(id);
     window.location = 'details.html?id=' +id;
   
 })
 
+function load1()
+{
+
+$('.wrapperblog').html("");
+    
+   
+    
+for(var i=0;i<blog.length;i++)
+{
+
+
+            
+    $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+           
+        
+    }
+   
+
+
+
+
+}
+
+
+
+
+$('.button4').on('click',function(){
+    console.log('reach');
+    $('#profile').html("");
+    $('#userblog').html("");
+    $('#contain1').css('display','none');
+    $('#home').css('display','none');
+    $('#profile').css('display','block');
+
+    $('#profile').append('<div  class="container-fluid userdata"><img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle userimg"><br><BR><br><label for="Title" class="col-sm-6 control-label text-right">Username :</label><label for="username" class="col-sm-6 control-label text-left">'+user[0].name+'</label>'+
+    '<label for="username" class="col-sm-6 control-label text-right">Email</label>'+'<label for="username" class="col-sm-6 control-label text-left">'+user[0].email+'</label>'+
+    '<br><label for="Title" class="col-sm-6 control-label text-right">Phone no :</label><label for="phoneno" class="col-sm-6 control-label text-left">'+user[0].phone+'</label></div><br><br>');
+    for(let i=0;i<blog.length;i++)
+    {
+        if(user[0].name==blog[i].author)
+        {
+            console.log("enter");
+    $('#profile').append('<div class="col-sm-12    subblog"><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br><button class="but9 btn btn-primary" id='+blog[i].id+'>Delete Blog</button><hr></div><br><br>');
+
+}
+}
+})
+
+
+
+$('body').on('click','.but9',function(){
+    let id=$(this).attr('id');
+    let lid="";
+    let cid="";
+    
+    
+  
+for(let i=0;i<commentarray.length;i++)
+{
+    if(commentarray[i].blogid==id)
+    {
+    deleted1(commentarray[i].id);
+    }
+}   
+for(let i=0;i<likes.length;i++)
+{
+    if(likes[i].blogid==id)
+    {
+    deleted2(likes[i].id);
+    }
+}
+deleted3(id);
+
+     
+})
+    
+    
+
+    function deleted1(id)
+    {
+        $.ajax({
+            type:"DELETE",
+            dataType:"json",
+            url:"http://localhost:3000/comments/"+id,
+            
+            
+            success:(data)=>{
+                console.log("deleted");
+                alert("deleted comments");
+               
+                
+               
+            },
+            error:(e)=>{
+                alert("error comments");
+            },async:false
+        });
+
+    }
+        
+    function deleted2(id)
+    {
+
+        $.ajax({
+                type:"DELETE",
+                dataType:"json",
+                url:"http://localhost:3000/likes/"+id,
+                data:{'blogid':id},
+                success:(data)=>{
+                    console.log("deleted");
+                    alert("deleted likes");
+                   
+                    
+                   
+                },
+                error:(e)=>{
+                    alert("error likes");
+                },async:false
+            });
+           
+
+    }
+    function deleted3(id)
+    {
+        $.ajax({
+            type:"DELETE",
+            dataType:"json",
+            url:"http://localhost:3000/blogs/"+id,
+            
+            success:(data)=>{
+                console.log("deleted");
+                alert("deleted");
+                
+               
+            },
+            error:(e)=>{
+                alert("error");
+            },
+            async:false
+        });
+    }
+
+
+
+
 
 
     })
+
+    
+
 
 
 

@@ -3,7 +3,7 @@
     margin: 0px;
 }
 body{
-    background: url(bg-01.jpg) fixed;
+    background-color: black;
     background-size:cover ;
 }
 *[role="form"] {
@@ -215,4 +215,11 @@ li a{
 .foot2{
     position: absolute;
     
+}
+
+.sub{
+    border: solid;
+    padding: 5px;
+    overflow: hidden;
+    height: 25vh;
 }

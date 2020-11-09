@@ -5,10 +5,28 @@
 body{
    
 }
+
+.subblog{
+    border-radius: 10px;
+    border:solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 #contain{
     display: none;
 }
-
+.userdata{
+    border-radius: 10px;
+    border: solid;
+    width: 40%;
+    padding: 0px;
+    
+}
+.userimg{
+    margin-top: 5px;
+    height: 60px;
+    width: 60px;
+}
 #home{
     height: 100vh;
     position: absolute;
@@ -32,6 +50,8 @@ body{
 .sub{
     border: solid;
     padding: 5px;
+    overflow: hidden;
+    height: 25vh;
 }
 
 #mytextarea{
@@ -168,7 +188,7 @@ li a{
         background-color: gray;
         margin-top: 1vh;
         position: absolute;
-        z-index: 2;
+        z-index: 5;
        justify-content: center;
         left: 0%;
         border:solid salmon;

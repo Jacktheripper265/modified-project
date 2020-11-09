@@ -48,26 +48,7 @@ $(document).ready(()=>{
 });
 
 
-// //date checking
-// $('#dat').on('change',function()
-// {
-//     var dat=$('#dat').val();
-//     var today=new Date();
-//     var dob=new Date(dat);
-//     // if(today.toString()== dob.toString()) {
-//     //     $('#but').attr("disabled","true");
-//     // }
-//     if(today > dob)
-//     {
-//         $('#but').removeAttr("disabled");
-//     }
-  
-//     else  {
-//         $('#but').attr("disabled","true");
-//     }
-// })
 
-//gender validation
 
 $('#but,.gen').on('click',function(){
     var radio=$('.gen');
@@ -163,6 +144,7 @@ $('.button3').click(function(){
     $('#contain1').css('display','none');
     $('#home').css('display','block');
     $('#myModal').attr('display','block');
+ 
     // $('#myForm').addClass('visible');
     // $('#myForm1').addClass('invisible');
     $('footer').removeClass('foot2');
@@ -264,6 +246,8 @@ $.ajax({
         console.log(data);
         blog=data;
         
+        load1();
+       
         
     },
     error:(e)=>{
@@ -271,10 +255,11 @@ $.ajax({
     }
 })
 
+       
 var cate;
 
 $('.buttonz').on('click',function(){
-    var cat=$(this).attr('data-filter');
+    let cat=$(this).attr('data-filter');
     cate=cat;
     $('.wrapperblog').html("");
     
@@ -286,20 +271,20 @@ $('.buttonz').on('click',function(){
         if(cat==blog[i].category)
         {
             
-            $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             
         }
         if(cat=="all")
         {
             
-            $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
            
         }
     }
 })
 
 $('#sea').on('keyup',()=>{
-    var search =$('#sea').val();
+    let search =$('#sea').val();
     $('.wrapperblog').html("");
     for(var i=0;i<blog.length;i++)
     {
@@ -309,7 +294,7 @@ $('#sea').on('keyup',()=>{
             if(blog[i].title.includes(search))
             {
             
-            $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
         if(cate=="all")
@@ -317,7 +302,7 @@ $('#sea').on('keyup',()=>{
             if(blog[i].title.includes(search))
             {
             
-            $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
     }
@@ -341,12 +326,34 @@ $('.butz').on('click',function(){
 
 
 
+function load1()
+{
+
+$('.wrapperblog').html("");
+    
+   
+    
+for(var i=0;i<blog.length;i++)
+{
+
+
+            
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+           
+        
+    }
+   
 
 
 
 
+}
 
-
+// function load2()
+// {
+   
+        
+// }
 
 
 
