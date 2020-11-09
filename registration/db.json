@@ -1,0 +1,394 @@
+{
+  "users": [
+    {
+      "name": "shekhar",
+      "email": "shekharpa@cybage.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 1
+    },
+    {
+      "name": "ryan",
+      "email": "ryan@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "name": "jack",
+      "email": "Jack@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 3
+    },
+    {
+      "name": "shekhar",
+      "email": "gg@c",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 4
+    },
+    {
+      "name": "shekhar",
+      "email": "shek@g.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 5
+    },
+    {
+      "name": "shekhar",
+      "email": "shekharpa1@cybage.com",
+      "password": "Shekhar@123",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 6
+    },
+    {
+      "name": "shekhar",
+      "email": "jaack@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 7
+    },
+    {
+      "name": "shekhar",
+      "email": "sack@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 8
+    },
+    {
+      "name": "shekha",
+      "email": "zack@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 9
+    },
+    {
+      "name": "zack",
+      "email": "zck@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "0879674906",
+      "gender": "Male",
+      "id": 10
+    },
+    {
+      "name": "john",
+      "email": "john@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 11
+    },
+    {
+      "name": "jason",
+      "email": "jason@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "9862792575",
+      "gender": "Male",
+      "id": 12
+    },
+    {
+      "name": "pooja",
+      "email": "pooja@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 13
+    },
+    {
+      "name": "pawar",
+      "email": "pawar@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 14
+    },
+    {
+      "name": "shekha",
+      "email": "ck@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 15
+    },
+    {
+      "name": "jean",
+      "email": "jean@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "0879674906",
+      "gender": "Female",
+      "id": 16
+    },
+    {
+      "name": "jess",
+      "email": "jess@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "9860289746",
+      "gender": "Female",
+      "id": 17
+    },
+    {
+      "name": "ken",
+      "email": "ke@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "1111111111",
+      "gender": "Male",
+      "id": 18
+    },
+    {
+      "name": "kris",
+      "email": "ris@gmail.com",
+      "password": "Jack@ss265",
+      "phone": "7894561230",
+      "gender": "Male",
+      "id": 19
+    },
+    {
+      "name": "jordan",
+      "email": "dan@gmail.com",
+      "password": "Jordan@265",
+      "phone": "8796749069",
+      "gender": "Male",
+      "id": 20
+    }
+  ],
+  "blogs": [
+    {
+      "author": "jack",
+      "title": "trip to goa",
+      "category": "IT",
+      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
+      "id": 1,
+      "likes": "shekhar"
+    },
+    {
+      "author": "jack",
+      "title": "should we buy bitbucket ",
+      "category": "Technology",
+      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
+      "id": 2
+    },
+    {
+      "author": "jack",
+      "title": "trip to goa",
+      "category": "Lifestyle",
+      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
+      "id": 3
+    },
+    {
+      "author": "jack",
+      "title": "cultivation chat group",
+      "category": "IT",
+      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
+      "id": 4
+    },
+    {
+      "author": "jack",
+      "title": "movie with buddies",
+      "category": "Technology",
+      "content": "Lego reconstructions of pop videos and cakes baked in the shape of iPods are not generally considered relevant to serious political debate. But even the most earnest bloggers will often take time out of their busy schedule to pass on some titbit of mildly entertaining geek ephemera. No one has done more to promote pointless, yet strangely cool, time-wasting stuff on the net than the editors of Boing Boing (subtitle: A Directory of Wonderful Things).  ",
+      "id": 5
+    },
+    {
+      "author": "shekhar",
+      "title": "live your life to the fullest",
+      "category": "Lifestyle",
+      "content": "<p><span style=\"color: #4d4d4d; font-family: Roboto, serif, arial, helvetica; font-size: 18px; background-color: #ffffff;\"><em>&ldquo;Your time is limited, don&rsquo;t waste it living someone else&rsquo;s life. Don&rsquo;t be trapped by dogma, which is living the result of other people&rsquo;s thinking. Don&rsquo;t let the noise of other&rsquo;s opinion drown your own inner voice. And most important, have the courage to follow your heart and intuition, they somehow already know what you truly want to become. Everything else is secondary.&rdquo;</em> &ndash;<strong>&nbsp;</strong></span><strong><a style=\"text-decoration-line: none; color: #960000; outline: 0px; transition: all 0.2s ease 0s; box-sizing: border-box; box-shadow: none; border-bottom: 2px solid transparent; font-family: Roboto, serif, arial, helvetica; font-size: 18px; background-color: #ffffff;\" href=\"https://personalexcellence.co/blog/steve-jobs/\">Steve Jobs</a></strong></p>",
+      "id": 6,
+      "likes": ""
+    },
+    {
+      "author": "shekhar",
+      "title": "should we buy bitbucket ",
+      "category": "It",
+      "content": "<p>e<strong>wrewrwerwerr</strong></p>",
+      "id": 7
+    }
+  ],
+  "likes": [
+    {
+      "blogid": "2",
+      "name": "jack",
+      "id": 2
+    },
+    {
+      "blogid": "3",
+      "name": "jack",
+      "id": 3
+    },
+    {
+      "blogid": "1",
+      "name": "shekhar",
+      "id": 4
+    },
+    {
+      "blogid": "6",
+      "name": "jack",
+      "id": 5
+    },
+    {
+      "blogid": "4",
+      "name": "jack",
+      "id": 6
+    },
+    {
+      "blogid": "5",
+      "name": "jack",
+      "id": 7
+    },
+    {
+      "blogid": "1",
+      "name": "jordan",
+      "id": 8
+    },
+    {
+      "blogid": "2",
+      "name": "jordan",
+      "id": 9
+    },
+    {
+      "blogid": "6",
+      "name": "jordan",
+      "id": 10
+    },
+    {
+      "blogid": "6",
+      "name": "shekhar",
+      "id": 11
+    },
+    {
+      "blogid": "3",
+      "name": "shekhar",
+      "id": 12
+    },
+    {
+      "blogid": "2",
+      "name": "shekhar",
+      "id": 13
+    },
+    {
+      "blogid": "1",
+      "name": "jack",
+      "id": 14
+    }
+  ],
+  "comments": [
+    {
+      "content": "hi there",
+      "blogid": "1",
+      "name": "jack",
+      "id": 1
+    },
+    {
+      "content": "how are you",
+      "blogid": "1",
+      "name": "shekhar",
+      "id": 2
+    },
+    {
+      "content": "its good",
+      "blogid": "2",
+      "name": "shekhar",
+      "id": 3
+    },
+    {
+      "content": "fine bro",
+      "blogid": "1",
+      "name": "jordan",
+      "id": 4
+    },
+    {
+      "content": "is it",
+      "blogid": "2",
+      "name": "jordan",
+      "id": 5
+    },
+    {
+      "content": "this article i great",
+      "blogid": "6",
+      "name": "jordan",
+      "id": 6
+    },
+    {
+      "content": "hi there how are you",
+      "blogid": "1",
+      "name": "jack",
+      "id": 7
+    },
+    {
+      "content": "",
+      "blogid": "2",
+      "name": "jack",
+      "id": 8
+    },
+    {
+      "content": " thank you bro",
+      "blogid": "2",
+      "name": "jack",
+      "id": 9
+    },
+    {
+      "content": "",
+      "blogid": "2",
+      "name": "jack",
+      "id": 10
+    },
+    {
+      "content": "how are you ar eyomsdklajs",
+      "blogid": "2",
+      "name": "jack",
+      "id": 11
+    },
+    {
+      "content": " yeah great article",
+      "blogid": "6",
+      "name": "jack",
+      "id": 12
+    },
+    {
+      "content": " yeah great piece of art",
+      "blogid": "6",
+      "name": "shekhar",
+      "id": 13
+    },
+    {
+      "content": "great work",
+      "blogid": "3",
+      "name": "shekhar",
+      "id": 14
+    },
+    {
+      "content": "good",
+      "blogid": "3",
+      "name": "shekhar",
+      "id": 15
+    },
+    {
+      "content": "yarr tera ",
+      "blogid": "1",
+      "name": "jack",
+      "id": 16
+    },
+    {
+      "content": "superstar",
+      "blogid": "2",
+      "name": "jack",
+      "id": 17
+    },
+    {
+      "content": "had a lot of fun",
+      "blogid": "5",
+      "name": "jack",
+      "id": 18
+    }
+  ]
+}

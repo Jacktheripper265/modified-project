@@ -1,0 +1,32 @@
+.b{
+    border-radius: 20px;
+    background-color: grey;
+    display: inline-block;
+}
+.filter{
+    display: inline-block;
+}
+.red{
+    background: #f00;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+     
+}
+
+.orange{
+    background: orange;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.yellow{
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+
