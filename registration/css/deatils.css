@@ -62,10 +62,15 @@ a {
 }
 
 .Bimage{
-  width: 60%;
+  width: 100%;
   height: 40%;
 }
 
 .fullblog{
 text-align: center;
+width: 50%;
 }
+
+/* .blogcontent{
+margin-left: 100px;
+} */

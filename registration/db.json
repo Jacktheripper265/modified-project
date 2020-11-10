@@ -7,182 +7,45 @@
       "phone": "8796749069",
       "gender": "Male",
       "id": 1
-    },
-    {
-      "name": "ryan",
-      "email": "ryan@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 2
-    },
-    {
-      "name": "jack",
-      "email": "Jack@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 3
-    },
-    {
-      "name": "shekhar",
-      "email": "gg@c",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 4
-    },
-    {
-      "name": "shekhar",
-      "email": "shek@g.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 5
-    },
-    {
-      "name": "shekhar",
-      "email": "shekharpa1@cybage.com",
-      "password": "Shekhar@123",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 6
-    },
-    {
-      "name": "shekhar",
-      "email": "jaack@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 7
-    },
-    {
-      "name": "shekhar",
-      "email": "sack@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 8
-    },
-    {
-      "name": "shekha",
-      "email": "zack@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 9
-    },
-    {
-      "name": "zack",
-      "email": "zck@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "0879674906",
-      "gender": "Male",
-      "id": 10
-    },
-    {
-      "name": "john",
-      "email": "john@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 11
-    },
-    {
-      "name": "jason",
-      "email": "jason@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "9862792575",
-      "gender": "Male",
-      "id": 12
-    },
-    {
-      "name": "pooja",
-      "email": "pooja@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 13
-    },
-    {
-      "name": "pawar",
-      "email": "pawar@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 14
-    },
-    {
-      "name": "shekha",
-      "email": "ck@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 15
-    },
-    {
-      "name": "jean",
-      "email": "jean@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "0879674906",
-      "gender": "Female",
-      "id": 16
-    },
-    {
-      "name": "jess",
-      "email": "jess@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "9860289746",
-      "gender": "Female",
-      "id": 17
-    },
-    {
-      "name": "ken",
-      "email": "ke@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "1111111111",
-      "gender": "Male",
-      "id": 18
-    },
-    {
-      "name": "kris",
-      "email": "ris@gmail.com",
-      "password": "Jack@ss265",
-      "phone": "7894561230",
-      "gender": "Male",
-      "id": 19
-    },
-    {
-      "name": "jordan",
-      "email": "dan@gmail.com",
-      "password": "Jordan@265",
-      "phone": "8796749069",
-      "gender": "Male",
-      "id": 20
     }
   ],
   "blogs": [
     {
-      "author": "jack",
+      "author": "shekhar",
       "title": "trip to goa",
-      "image": "a.jpg",
+      "image": "../image/a.jpg",
+      "date": "2020/11/10",
       "category": "Lifestyle",
-      "content": "<p><span style=\"color: #292929; font-family: charter, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 21px; letter-spacing: -0.063px; background-color: #ffffff;\">As a parameter we need to pass over the file containing our JSON structure (db.json). Furthermore we&rsquo;re using the&nbsp;</span><em class=\"ic\" style=\"box-sizing: inherit; color: #292929; font-family: charter, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 21px; letter-spacing: -0.063px; background-color: #ffffff;\">&mdash; watch</em><span style=\"color: #292929; font-family: charter, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 21px; letter-spacing: -0.063px; background-color: #ffffff;\">&nbsp;parameter. By using this parameter we&rsquo;re making sure that the server is started in watch mode which means that it watches for file changes and updates the exposed API accordingly.</span></p>",
+      "content": "<p style=\"box-sizing: inherit; margin: 0px 0px 26px; padding: 0px; color: #222222; font-family: Roboto, sans-serif; font-size: 16px; background-color: #ffffff;\">Diwali is my favorite festival of the year and I celebrate it with lots of enthusiasm with my family members and friends. Diwali is called the festival of lights because we celebrate it by lighting lots of diyas and candles. It is a traditional and cultural festival celebrated by each and every Hindu person all over India and abroad. People decorate their houses with lots of candles and small clay oil lamps indicating the victory of good over evil.</p>\n<p style=\"box-sizing: inherit; margin: 0px 0px 26px; padding: 0px; color: #222222; font-family: Roboto, sans-serif; font-size: 16px; background-color: #ffffff;\">Family members spend most of the day time in preparing house (cleaning, decorating, etc) to welcome the festival with a grand evening party. Neighbors, family members, and friends get collected in the evening party and enjoy the party with lots of delicious Indian dishes, dance, music, etc all through the night. Houses look very attractive in whitewash, candle lights, and rangolis. High pitch music and fireworks make the celebration more interesting.</p>",
       "id": 1
+    },
+    {
+      "author": "shekhar",
+      "title": "should we buy bitbucket ",
+      "image": "../image/jerry.png",
+      "date": "2020/11/10",
+      "category": "Lifestyle",
+      "content": "<p><span style=\"font-family: 'arial black', sans-serif;\"><span style=\"color: rgba(0, 0, 0, 0.84); font-size: 22px; letter-spacing: -0.286px;\">First of all, understand that India is the land of festivals. However, none of the festivals comes close to Diwali. It is certainly one of the biggest&nbsp;</span><a style=\"box-sizing: border-box; border: 0px; color: #55bbea; text-decoration-line: none; transition: color 0.8s ease-out 0s; font-size: 22px; letter-spacing: -0.286px;\" href=\"https://www.toppr.com/guides/general-awareness/indian-culture/important-festivals-and-events-in-india/\">festivals in India.</a><span style=\"color: rgba(0, 0, 0, 0.84); font-size: 22px; letter-spacing: -0.286px;\">&nbsp;It is probably the brightest festival in the world. People of different religions celebrate Diwali. Most noteworthy, the festival signifies the victory of light over darkness. This also means the triumph of good over evil and knowledge over ignorance. It is known as the festival of lights. Consequently, there are bright lights all over the whole country during Diwali. In this essay on Diwali, we will see the religious and spiritual significance of Diwali.</span></span></p>",
+      "id": 2
     }
   ],
   "likes": [
     {
       "blogid": "1",
-      "name": "jack",
+      "name": "shekhar",
       "id": 1
+    },
+    {
+      "blogid": "2",
+      "name": "shekhar",
+      "id": 2
     }
   ],
   "comments": [
     {
-      "content": "xfgxdfgdf",
+      "content": "good",
       "blogid": "1",
-      "name": "jack",
+      "name": "shekhar",
       "id": 1
     }
   ]

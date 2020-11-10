@@ -3,42 +3,16 @@
     margin: 0px;
 }
 body{
-   
-}
-
-.subblog{
-    border-radius: 10px;
-    border:solid;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#contain{
-    display: none;
-}
-.userdata{
-    border-radius: 10px;
-    border: solid;
-    width: 40%;
-    padding: 0px;
-    
-}
-.userimg{
-    margin-top: 5px;
-    height: 60px;
-    width: 60px;
-}
-#home{
-    height: 100vh;
-    position: absolute;
-    top: 10vh;
+    background-color: black;
+    background-size:cover ;
 }
 *[role="form"] {
-    max-width: 780px;
+    max-width: 590px;
     padding: 15px;
     margin: 0 auto;
     border-radius: 0.3em;
     background-color: springgreen ;
-    height: 70vh;
+    
     opacity: 0.9;
 }
 .head{
@@ -47,25 +21,20 @@ body{
     font-weight: bolder;
 }
 
-.sub{
-    text-align: center;
-    border: solid;
-    padding: 5px;
-    overflow: hidden;
-    height: 45vh;
-}
-.Bimage{
-    width: 60%;
-    height: 40%;
-}
-#mytextarea{
-    height: 41vh;
+#myForm1{
+    display:none;
 }
 
-#myForm1{
+#myForm{
     display: none;
 }
 
+#contain1{
+    display: none;
+}
+#home{
+    display: block;
+}
 *[role="form"] h2 { 
     font-family: 'Open Sans' , sans-serif;
     font-size: 40px;
@@ -140,10 +109,6 @@ footer{
     padding-top: 3vh;
    
 }
-
-#comment{
-    width: 50%;
-}
 /* 
 li a{
     text-decoration: none;
@@ -168,8 +133,7 @@ li a{
     background-color: tomato;
     color: chartreuse;
 }
-.fullblog{
-    width: 100%}
+
 @media screen and (max-width:768px)
 {
     
@@ -192,7 +156,7 @@ li a{
         background-color: gray;
         margin-top: 1vh;
         position: absolute;
-        z-index: 5;
+        z-index: 2;
        justify-content: center;
         left: 0%;
         border:solid salmon;
@@ -219,12 +183,7 @@ li a{
         
     }
     .container{
-        margin-top: 12vh;
-    }
-
-    #mytextarea{
-        height: 30vh;
-
+        margin-top: 16vh;
     }
     /* li :hover{
         border-bottom: none;
@@ -240,7 +199,7 @@ li a{
         position: relative;
     }
 
-    .btn{
+    .btn1{
         width: 100%;
     }
    
@@ -258,3 +217,26 @@ li a{
     
 }
 
+
+
+.Bimage{
+    width: 100%;
+    height: 40%;
+}
+
+.sub{
+    
+    
+    padding: 5px;
+    box-shadow: 5px 10px #888888;
+    
+}
+.innersub{
+    height: 8rem;
+    line-height: 2rem;
+    overflow: hidden;
+}
+
+.datespan{
+    display: block;
+}

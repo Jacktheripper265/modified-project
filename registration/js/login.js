@@ -114,41 +114,68 @@ $('#myForm').submit((a)=>{
 })
 
 
-$('.button1').click(function(){
-    console.log('reach');
-    $('#home').css('display','none');
-    $('#contain1').css('display','block');
-    $('#myForm').css('display','none');
-    $('#myForm1').css('display','block');
-    // $('#myForm').addClass('invisible');
-    // $('#myForm1').addClass('visible');
-    $('footer').addClass('foot2');
+$('.buttonx').on('click',function(){
+    let type=$(this).attr('data-filter');
+    if(type=='home')
+    {
+        console.log('reach');
+        $('#myForm1').css('display','none');
+        $('#myForm').css('display','none');
+        $('#contain1').css('display','none');
+        $('#home').css('display','block');
+        $('#myModal').attr('display','block');
+        $('footer').removeClass('foot2');
+
+    }
+    else if(type=='login')
+    {
+        console.log('reach');
+        $('#home').css('display','none');
+        $('#contain1').css('display','block');
+        $('#myForm').css('display','none');
+        $('#myForm1').css('display','block');
+        $('footer').addClass('foot2');
+    }
+    else if(type=='register')
+    {
+        console.log('reach');
+        $('#home').css('display','none');
+        $('#contain1').css('display','block');
+        $('#myForm1').css('display','none');
+        $('#myForm').css('display','block');
+        $('footer').removeClass('foot2');
+    }
+    
+    
 })
 
-$('.button2').click(function(){
-    console.log('reach');
-    $('#home').css('display','none');
-    $('#contain1').css('display','block');
-    $('#myForm1').css('display','none');
-    $('#myForm').css('display','block');
-   
-    // $('#myForm').addClass('visible');
-    // $('#myForm1').addClass('invisible');
-    $('footer').removeClass('foot2');
-})
+// $('.button1').click(function(){
+//     console.log('reach');
+//     $('#home').css('display','none');
+//     $('#contain1').css('display','block');
+//     $('#myForm').css('display','none');
+//     $('#myForm1').css('display','block');
+//     $('footer').addClass('foot2');
+// })
 
-$('.button3').click(function(){
-    console.log('reach');
-    $('#myForm1').css('display','none');
-    $('#myForm').css('display','none');
-    $('#contain1').css('display','none');
-    $('#home').css('display','block');
-    $('#myModal').attr('display','block');
- 
-    // $('#myForm').addClass('visible');
-    // $('#myForm1').addClass('invisible');
-    $('footer').removeClass('foot2');
-})
+// $('.button2').click(function(){
+//     console.log('reach');
+//     $('#home').css('display','none');
+//     $('#contain1').css('display','block');
+//     $('#myForm1').css('display','none');
+//     $('#myForm').css('display','block');
+//     $('footer').removeClass('foot2');
+// })
+
+// $('.button3').click(function(){
+//     console.log('reach');
+//     $('#myForm1').css('display','none');
+//     $('#myForm').css('display','none');
+//     $('#contain1').css('display','none');
+//     $('#home').css('display','block');
+//     $('#myModal').attr('display','block');
+//     $('footer').removeClass('foot2');
+// })
 
 $('#myForm1').submit((a)=>{
     a.preventDefault();
@@ -254,7 +281,17 @@ $.ajax({
         alert("error");
     }
 })
-
+function getBlogCard(data) {
+    return `
+      <div class="sub">
+        <img class="Bimage" src='${data.image}'>
+        <h3>${data.title}</h3>
+        <div class="innersub">${data.content}</div>
+        <span class="text-muted datespan">Posted on ${data.date}</span>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button>
+      </div>
+    `;
+   }
        
 var cate;
 
@@ -268,18 +305,18 @@ $('.buttonz').on('click',function(){
     for(var i=0;i<blog.length;i++)
     {
         
-        if(cat==blog[i].category)
+        if(cat==blog[i].category || cat=="all")
         {
-            
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append(getBlogCard(blog[i]));
+           //$('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><span class="text-muted">Posted on:'+blog[i].date+'</span><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             
         }
-        if(cat=="all")
-        {
+        // if(cat=="all")
+        // {
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+        //     $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><span class="text-muted">Posted on:'+blog[i].date+'</span><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
            
-        }
+        // }
     }
 })
 
@@ -289,22 +326,22 @@ $('#sea').on('keyup',()=>{
     for(var i=0;i<blog.length;i++)
     {
         
-        if(cate==blog[i].category)
+        if(cate==blog[i].category || cat=="all")
         {
             if(blog[i].title.includes(search))
             {
-            
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+                $('.wrapperblog').append(getBlogCard(blog[i]));
+           // $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><span class="text-muted">Posted on:'+blog[i].date+'</span><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
-        if(cate=="all")
-        {
-            if(blog[i].title.includes(search))
-            {
+        // if(cate=="all")
+        // {
+        //     if(blog[i].title.includes(search))
+        //     {
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
-            }
-        }
+        //     $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><span class="text-muted">Posted on:'+blog[i].date+'</span><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+        //     }
+        
     }
 
 
@@ -337,8 +374,8 @@ for(var i=0;i<blog.length;i++)
 {
 
 
-            
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+    $('.wrapperblog').append(getBlogCard(blog[i]));
+            //$('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><span class="text-muted">Posted on:'+blog[i].date+'</span><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
            
         
     }
