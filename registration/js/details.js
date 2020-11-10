@@ -85,7 +85,7 @@ $(document).ready(() => {
       if (blog[i].id == id) {
         console.log("hi there");
         $("#display").append(
-          '<div class="fullblog container"><br><h2>'+
+          '<div class="fullblog container"><br><h2>' +
             blog[i].title +
             '</h2><br><img class="Bimage" src=' +
             blog[i].image +

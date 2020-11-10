@@ -5,7 +5,7 @@
     
 /* Set gray background color and 100% height */
 .sidenav {
-  background-color:aqua;
+  background-color:#262228;
   height: 100vh;
 }
 
@@ -15,9 +15,12 @@
   flex-wrap: wrap;
   padding: 10px;
 }
-
+.categoryt{
+  color: #ffce00;
+}
 .sub{
-  width: 48%;
+  background-color: azure;
+  width: 49%;
   border-radius: 10px;
   margin-left: 5px;
   margin-right: 5px;

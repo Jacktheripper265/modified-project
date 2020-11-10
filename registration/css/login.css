@@ -3,7 +3,7 @@
     margin: 0px;
 }
 body{
-    background-color: black;
+    background:url(../image/b1.jpg);
     background-size:cover ;
 }
 *[role="form"] {
@@ -11,13 +11,13 @@ body{
     padding: 15px;
     margin: 0 auto;
     border-radius: 0.3em;
-    background-color: springgreen ;
+    background-color: #ffce00 ;
     
     opacity: 0.9;
 }
 .head{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: orangered;
+    color: #262228;
     font-weight: bolder;
 }
 
@@ -124,14 +124,20 @@ li a{
     border-bottom: 5px solid coral;
     
 } */
+.buttonz{
+    background-color: #ffce00;
+    color: #262228;
+}
+
 
 .navbar{
     width: 100%;
     height: 10vh;
+    background-color: #f9cf00;
 }
 .btn1{
-    background-color: tomato;
-    color: chartreuse;
+    background-color: #262228;
+    color: #f9cf00;
 }
 
 @media screen and (max-width:768px)
@@ -222,13 +228,14 @@ li a{
 .Bimage{
     width: 100%;
     height: 40%;
+    
 }
 
 .sub{
+   
+    height: 49vh;
     
-    
-    padding: 5px;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 5px 10px  #ffce00;
     
 }
 .innersub{
@@ -239,4 +246,7 @@ li a{
 
 .datespan{
     display: block;
+}
+.mbutton{
+    margin-left: 5px;
 }
