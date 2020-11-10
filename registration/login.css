@@ -217,9 +217,15 @@ li a{
     
 }
 
+
 .sub{
+    text-align: center;
     border: solid;
     padding: 5px;
     overflow: hidden;
-    height: 25vh;
+    height: 45vh;
+}
+.Bimage{
+    width: 60%;
+    height: 40%;
 }

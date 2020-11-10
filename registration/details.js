@@ -124,8 +124,7 @@ $('#display').html("");
         if(blog[i].id==id)
         {
             console.log('hi there')
-            $('#display').append('<div class="fullblog"><h4></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '
-            +blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p> <button type="button" id='+
+            $('#display').append('<div class="fullblog"><br><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br><p>'+blog[i].content+'</p> <button type="button" id='+
             blog[i].id+' class="btn btn-default btn-sm like"><span class="glyphicon glyphicon-thumbs-up" ></span> Like</button><span class="text-muted nlike">'
             +''+'</span><span class="text-muted lwarn"></span><hr><br>'+
             '<div class="container comm">'+

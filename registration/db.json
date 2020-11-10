@@ -164,54 +164,26 @@
   "blogs": [
     {
       "author": "jack",
-      "title": "erwaerwe",
+      "title": "trip to goa",
+      "image": "a.jpg",
       "category": "Lifestyle",
-      "content": "<p>rwerwerwer</p>",
-      "id": 3
-    },
-    {
-      "author": "shekhar",
-      "title": "movie with buddies",
-      "category": "IT",
-      "content": "<p style=\"box-sizing: inherit; margin: 0px 0px 26px; padding: 0px; color: #222222; font-family: Roboto, sans-serif; font-size: 16px; background-color: #ffffff;\">Diwali is my favorite festival of the year and I celebrate it with lots of enthusiasm with my family members and friends. Diwali is called the festival of lights because we celebrate it by lighting lots of diyas and candles. It is a traditional and cultural festival celebrated by each and every Hindu person all over India and abroad. People decorate their houses with lots of candles and small clay oil lamps indicating the victory of good over evil.</p>\n<p style=\"box-sizing: inherit; margin: 0px 0px 26px; padding: 0px; color: #222222; font-family: Roboto, sans-serif; font-size: 16px; background-color: #ffffff;\">Family members spend most of the day time in preparing house (cleaning, decorating, etc) to welcome the festival with a grand evening party. Neighbors, family members, and friends get collected in the evening party and enjoy the party with lots of delicious Indian dishes, dance, music, etc all through the night. Houses look very attractive in whitewash, candle lights, and rangolis. High pitch music and fireworks make the celebration more interesting.</p>",
-      "id": 4
+      "content": "<p><span style=\"color: #292929; font-family: charter, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 21px; letter-spacing: -0.063px; background-color: #ffffff;\">As a parameter we need to pass over the file containing our JSON structure (db.json). Furthermore we&rsquo;re using the&nbsp;</span><em class=\"ic\" style=\"box-sizing: inherit; color: #292929; font-family: charter, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 21px; letter-spacing: -0.063px; background-color: #ffffff;\">&mdash; watch</em><span style=\"color: #292929; font-family: charter, Georgia, Cambria, 'Times New Roman', Times, serif; font-size: 21px; letter-spacing: -0.063px; background-color: #ffffff;\">&nbsp;parameter. By using this parameter we&rsquo;re making sure that the server is started in watch mode which means that it watches for file changes and updates the exposed API accordingly.</span></p>",
+      "id": 1
     }
   ],
   "likes": [
     {
-      "blogid": "3",
+      "blogid": "1",
       "name": "jack",
       "id": 1
-    },
-    {
-      "blogid": "4",
-      "name": "shekhar",
-      "id": 3
-    },
-    {
-      "blogid": "3",
-      "name": "shekhar",
-      "id": 5
     }
   ],
   "comments": [
     {
-      "content": "czxczxc",
-      "blogid": "3",
+      "content": "xfgxdfgdf",
+      "blogid": "1",
       "name": "jack",
       "id": 1
-    },
-    {
-      "content": "fgfcgfg",
-      "blogid": "4",
-      "name": "shekhar",
-      "id": 3
-    },
-    {
-      "content": "sfsded",
-      "blogid": "3",
-      "name": "shekhar",
-      "id": 5
     }
   ]
 }

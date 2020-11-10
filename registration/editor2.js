@@ -80,10 +80,12 @@ $('form').submit((a)=>{
 console.log(user[0].name);
   var o = new Object();
 var title=$('#title').val();
+var Bimage=$('#Bimage').val();
 var content=tinymce.activeEditor.getContent();
 var category=$( "#Category option:selected" ).text();
 o.author=user[0].name;
   o.title=title;
+  o.image=Bimage;
   o.category=category;
   o.content=content;
 
@@ -153,11 +155,11 @@ $('.buttonz').on('click',function(){
           
 
         
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
         }
         if(cat=="all")
         {
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
         }
     }
 })
@@ -173,7 +175,7 @@ $('#sea').on('keyup',()=>{
             if(blog[i].title.includes(search))
             {
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
         if(cate=="all")
@@ -181,7 +183,7 @@ $('#sea').on('keyup',()=>{
             if(blog[i].title.includes(search))
             {
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
     }
@@ -210,7 +212,7 @@ for(var i=0;i<blog.length;i++)
 
 
             
-    $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><button class="but3 btn btn-primary" id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+    $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br><button class="but3 btn btn-primary " id='+blog[i].id+'>Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
            
         
     }
@@ -240,7 +242,7 @@ $('.button4').on('click',function(){
         if(user[0].name==blog[i].author)
         {
             console.log("enter");
-    $('#profile').append('<div class="col-sm-12    subblog"><h3>Title: '+blog[i].title+'</h3><br><p>'+blog[i].content+'</p><br><button class="but9 btn btn-primary" id='+blog[i].id+'>Delete Blog</button><hr></div><br><br>');
+    $('#profile').append('<div class="col-sm-12    subblog"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br><p>'+blog[i].content+'</p><br><button class="but9 btn btn-primary" id='+blog[i].id+'>Delete Blog</button><hr></div><br><br>');
 
 }
 }
@@ -250,8 +252,7 @@ $('.button4').on('click',function(){
 
 $('body').on('click','.but9',function(){
     let id=$(this).attr('id');
-    let lid="";
-    let cid="";
+   
     
     
   

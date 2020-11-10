@@ -271,13 +271,13 @@ $('.buttonz').on('click',function(){
         if(cat==blog[i].category)
         {
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             
         }
         if(cat=="all")
         {
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
            
         }
     }
@@ -294,7 +294,7 @@ $('#sea').on('keyup',()=>{
             if(blog[i].title.includes(search))
             {
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
         if(cate=="all")
@@ -302,7 +302,7 @@ $('#sea').on('keyup',()=>{
             if(blog[i].title.includes(search))
             {
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
             }
         }
     }
@@ -338,7 +338,7 @@ for(var i=0;i<blog.length;i++)
 
 
             
-            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
+            $('.wrapperblog').append('<div class="sub"><h3>Title: '+blog[i].title+'</h3><br><img class="Bimage" src='+blog[i].image+'><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><br><p>'+blog[i].content+'</p><hr></div><br><br>');
            
         
     }
@@ -349,141 +349,7 @@ for(var i=0;i<blog.length;i++)
 
 }
 
-// function load2()
-// {
-   
-        
-// }
 
-
-
-
-// $('#allBlogButton').click(function(e){
-  
-//     $(".wrapperblog").show();
-    
-   
-   
-//             $('.wrapperblog').html("");
-//             $('.techWrapperBlog').html("");
-//             $('.lifestyleWrapperBlog').html("");
-//             $('.ITWrapperBlog').html(" ");
-//             $('.SearchB').html(" ");
-//             for(i=0;i<blog.length;i++)
-//             {
-                
-//                 var contentsliced=blog[i].content.slice(0,50);
-//                 $('.wrapperblog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+contentsliced+'</p><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
-                
-    
-//             }
-        
-// })
-
-
-// //techcatbuttonclick
-
-// $('#techCatButton').click(function(e){
-//     $(".wrapperblog").hide();
-//     $(".lifstyleWrapperBlog").hide();
-//     $(".ITWrapperBlog").hide();
-//     $(".techWrapperBlog").show();
-//     $('.techWrapperBlog').html("");
-   
-//     $('.lifestyleWrapperBlog').html("");
-//     $('.ITWrapperBlog').html(" ");
-//     $('.SearchB').html(" ");
-   
-//             for(i=0;i<blog.length;i++)
-//             {
-//                 console.log(blog[i]);
-//                 if(blog[i].category=="Technology")
-//                 {  var contentsliced=blog[i].content.slice(0,50);
-
-//                 $('.techWrapperBlog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+contentsliced+'</p><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
-//                 }
-//             }
-        
-      
-
-
-// })
-
-// //lifestylecatButton onclick
-// $('#lifestyleCatButton').click(function(e){
-// $(".wrapperblog").hide();
-// $(".techWrapperBlog").hide();
-// $(".ITWrapperBlog").hide();
-// $(".lifestyleWrapperBlog").show();
-// $('.lifestyleWrapperBlog').html("");
-// $('.SearchB').html(" ");
-// $('.techWrapperBlog').html("");
-
-
-// $('.ITWrapperBlog').html(" ");
-
-//         for(i=0;i<blog.length;i++)
-//         {
-//             if(blog[i].category=="Lifestyle")
-//             {var contentsliced=blog[i].content.slice(0,50);
-//             $('.lifestyleWrapperBlog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+contentsliced+'</p><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
-//             }
-//         }
-    
-
-
-// })
-
-
-
-// //ITcatButton onclick
-
-// $('#ITCatButton').click(function(e){
-// $(".wrapperblog").hide();
-// $(".techWrapperBlog").hide();
-// $(".lifestyleWrapperBlog").hide();
-// $(".ITWrapperBlog").show();
-// $('.ITWrapperBlog').html(" ");
-// $('.SearchB').html(" ");
-// $('.techWrapperBlog').html("");
-
-// $('.lifestyleWrapperBlog').html("");
-
-
-//         for(i=0;i<blog.length;i++)
-//         {
-//             if(blog[i].category=="IT")
-//             {var contentsliced=blog[i].content.slice(0,50);
-//             $('.ITWrapperBlog').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+contentsliced+'</p><br> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
-//             }
-
-//         }
-    
-// })
-
-// $('#sea').on('keyup',function(e){
-//     $(".wrapperblog").hide();
-//     $(".techWrapperBlog").hide();
-//     $(".lifestyleWrapperBlog").hide();
-//     $(".ITWrapperBlog").hide();
-//     $(".SearchB").show();
-//     $('.techWrapperBlog').html("");
-//     $('.SearchB').html(" ");
-//     $('.lifestyleWrapperBlog').html("");
-//     $('.ITWrapperBlog').html(" ");
-//     var title=$('#sea').val();
-//     console.log(title);
-//             for(i=0;i<blog.length;i++)
-//             {
-//                 var titles=blog[i].title;
-//                 if(titles.includes(title))
-//                 {var contentsliced=blog[i].content.slice(0,50);
-//                 $('.SearchB').append('<div class="sub"><h4><small>RECENT POSTS</small></h4><hr><h3>Author: '+blog[i].author+'</h3><br><h3>Category: '+blog[i].category+'</h3><br><h3>Title: '+blog[i].title+'</h3><br><p>'+contentsliced+'</p>  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Continue Reading</button><hr></div><br><br>');
-//                 }
-    
-//             }
-        
-//     })
 
 
   

@@ -31,7 +31,7 @@ a {
     border-radius: 50%;
   }
   #display{
-      
+    
     width: 100%;
     background-color: greenyellow;
     
@@ -59,4 +59,13 @@ a {
 .comment-wrapper .media-list .media {
     border-bottom:1px dashed #efefef;
     margin-bottom:25px;
+}
+
+.Bimage{
+  width: 60%;
+  height: 40%;
+}
+
+.fullblog{
+text-align: center;
 }
